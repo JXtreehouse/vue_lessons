@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html >
+<head>
+	<meta charset="UTF-8">
+	<title>VueJS  Tutorials</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+	<div id="vue-app">
+	  <h1>Looping with v-for</h1>
+    <ul>
+    	<li v-for="(character,index) in characters">{{index}}.{{character}}</li>
+    </ul>
+    <ul>
+    	<li v-for="(jx, index) in jxs">{{index}}.{{jx.name}}-{{jx.age}}</li>
+    </ul>
+
+    <template v-for="(jx, index) in jxs" >
+
+    <h3>{{index}}.{{jx.name}}</h3>
+    <p>{{jx.age}}</p>
+    	
+    </template>
+
+    <template v-for="jx in jxs">
+      <div v-for="(val,key) in jx">
+
+        <p>{{key}}-{{val}}</p>
+      	
+      </div>
+    	
+    </template>
+
+	</div>
+
+	<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
