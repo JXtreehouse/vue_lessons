@@ -27,6 +27,10 @@ export default {
   },
   created(){
     this.$http.get('https://myvueblog.firebaseio.com/post.json').then(function(data){
+      // Convert to JSON
+      // 你需求发起一个JSON请求 — 返回的数据对象里有一个json方法
+      //将原始数据转化成JavaScript对象
+      //它就是一个简单的JSON.parse(jsonString)调用，但json方法做为简写方式还是很方便的。
       return data.json();
     }).then(function(data) {
       var blogsArray = [];

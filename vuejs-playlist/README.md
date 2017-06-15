@@ -507,8 +507,12 @@ npm run dev
 - jquery
 - fetch API （浏览器提供的异步请求接口）
 - vue-resource
-- 
+
+[Javascript window.fetch API](http://www.webhek.com/post/javascript-fetch-api.html)
+
 [vue-resource  The HTTP client for Vue.js](https://github.com/pagekit/vue-resource)
+
+[VueResource](https://segmentfault.com/a/1190000007087934)
 
 
 ```
