@@ -27,6 +27,7 @@ function modal(obj,fn){
     this.modal.addEventListener("click",function(ev){
         /*srcElement*/
         var oSrc=ev.target||ev.srcElement;
+        console.log(oSrc);
         if(this.closeBtn.contains(oSrc) || oSrc.className.indexOf("cancel")!=-1){
             this.hide();
             drag&&drag.init();
